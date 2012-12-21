@@ -9,11 +9,8 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-<<<<<<< HEAD
 module Watch
-=======
 module CourseProject
->>>>>>> 744664642a5100298443ffd1de94089aa4d7a792
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -43,12 +40,9 @@ module CourseProject
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
 
-<<<<<<< HEAD
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true
 
-=======
->>>>>>> 744664642a5100298443ffd1de94089aa4d7a792
     # Use SQL instead of Active Record's schema dumper when creating the database.
     # This is necessary if your schema can't be completely dumped by the schema dumper,
     # like if you have constraints or database-specific column types
@@ -66,4 +60,5 @@ module CourseProject
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
   end
+end
 end
