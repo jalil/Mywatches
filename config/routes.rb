@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Watch::Application.routes.draw do
   root to: "posts#index"
   
@@ -61,4 +62,10 @@ resources :posts do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+=======
+CourseProject::Application.routes.draw do
+  get "posts/index"
+
+  root to: "posts#index"
+>>>>>>> 744664642a5100298443ffd1de94089aa4d7a792
 end

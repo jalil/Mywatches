@@ -1,6 +1,11 @@
 source 'https://rubygems.org'
 
+<<<<<<< HEAD
 gem 'rails', '3.2.9'
+=======
+gem 'rails', '3.2.3'
+gem 'bootstrap-sass'
+>>>>>>> 744664642a5100298443ffd1de94089aa4d7a792
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -15,7 +20,11 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+<<<<<<< HEAD
   # gem 'therubyracer', :platforms => :ruby
+=======
+  # gem 'therubyracer', :platform => :ruby
+>>>>>>> 744664642a5100298443ffd1de94089aa4d7a792
 
   gem 'uglifier', '>= 1.0.3'
 end
@@ -35,4 +44,8 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
+<<<<<<< HEAD
 # gem 'debugger'
+=======
+# gem 'ruby-debug19', :require => 'ruby-debug'
+>>>>>>> 744664642a5100298443ffd1de94089aa4d7a792

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Watch::Application.configure do
+=======
+CourseProject::Application.configure do
+>>>>>>> 744664642a5100298443ffd1de94089aa4d7a792
   # Settings specified here will take precedence over those in config/application.rb
 
   # The test environment is used exclusively to run your application's

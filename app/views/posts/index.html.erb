@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p><%= link_to 'submit a new link', new_post_path%> </p>
 
 <ul>
@@ -10,3 +11,18 @@
 	<% end %>
 
 
+=======
+<table>
+	<tr>
+		<td></td>
+		<td></td>
+	</tr>
+
+
+	<tr><%@posts.each do |post| %>
+		<td><%=link_to post.title , post.url %><hr></td>
+		
+	</tr>
+	<% end %>
+</table>
+>>>>>>> 744664642a5100298443ffd1de94089aa4d7a792

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
@@ -259,3 +260,16 @@ vendor
   External libraries that the application depends on. Also includes the plugins
   subdirectory. If the app has frozen rails, those gems also go here, under
   vendor/rails/. This directory is in the load path.
+=======
+== Getting Started
+
+1. Download/unzip or git clone this project into your local directory
+
+2. Make sure you have bundler gem installed, and within this project's directory, run:
+       <tt>bundle install</tt>
+
+3. Then run:       
+       <tt>rails server</tt>
+
+3. Go to http://localhost:3000 with a browser.
+>>>>>>> 744664642a5100298443ffd1de94089aa4d7a792

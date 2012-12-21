@@ -11,6 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20121216044725) do
 
   create_table "comments", :force => true do |t|
@@ -21,6 +22,9 @@ ActiveRecord::Schema.define(:version => 20121216044725) do
   end
 
   add_index "comments", ["post_id"], :name => "index_comments_on_post_id"
+=======
+ActiveRecord::Schema.define(:version => 20121210053608) do
+>>>>>>> 744664642a5100298443ffd1de94089aa4d7a792
 
   create_table "posts", :force => true do |t|
     t.string   "url"
