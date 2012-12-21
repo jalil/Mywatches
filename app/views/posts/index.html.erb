@@ -1,0 +1,12 @@
+<p><%= link_to 'submit a new link', new_post_path%> </p>
+
+<ul>
+
+	<%@posts.each do |post| %>
+	<strong><li><%=link_to post.title, post.url %></strong>
+        <i> <%= link_to "comments #{post.comments.count}", post_path(post) %></i>
+	</li>
+	<p>
+	<% end %>
+
+

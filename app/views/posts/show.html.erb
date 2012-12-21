@@ -1,0 +1,16 @@
+<hr>
+<p>
+<%=link_to @post.title, @post.url %>
+<p>comments <%=@post.comments.size %> 
+<%@post.comments.each do |comment| %>
+	<ul>
+		<li><%=comment.content%></li>
+	</ul>
+<% end %>
+<p>
+<h4> create a new comment </h4>
+<%=form_for([@post, @comment]) do |c| %>
+		<%=c.text_area  :content, :size => "5x5" %> <br>
+     	<%=c.submit "submit a comment" %>
+<% end %>
+</p>
