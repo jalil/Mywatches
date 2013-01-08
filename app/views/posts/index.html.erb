@@ -1,28 +1,26 @@
-<<<<<<< HEAD
-<p><%= link_to 'submit a new link', new_post_path%> </p>
 
-<ul>
+<ol class="unstyled">
 
-	<%@posts.each do |post| %>
-	<strong><li><%=link_to post.title, post.url %></strong>
-        <i> <%= link_to "comments #{post.comments.count}", post_path(post) %></i>
-	</li>
-	<p>
-	<% end %>
+<%@posts.each do |post| %>
 
 
-=======
-<table>
-	<tr>
-		<td></td>
-		<td></td>
-	</tr>
+ 
+<li>
+	<%=link_to post_votes_path(post, direction: "up"), :method => post  do %>
+     <i class="icon-thumbs-up"></i>
+       <% end %>
+        <%=post.vote_count %>
+       <%=link_to post_votes_path(post, direction: "down"),  :method => post do %>
+     
+       <strong><i class="icon-thumbs-down"></i>
+   <%=display_url(post)%> </strong>
+        <% end %>
+         <h6><%= time_ago_in_words(post.created_at) %>
+        <%=link_to "comments #{post.comments.size}",  post_path(post) %></h6>
+  
+</li>
 
 
-	<tr><%@posts.each do |post| %>
-		<td><%=link_to post.title , post.url %><hr></td>
-		
-	</tr>
-	<% end %>
-</table>
->>>>>>> 744664642a5100298443ffd1de94089aa4d7a792
+<% end %>
+
+<ol>

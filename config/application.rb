@@ -10,7 +10,6 @@ if defined?(Bundler)
 end
 
 module Watch
-module CourseProject
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -60,5 +59,4 @@ module CourseProject
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
   end
-end
 end

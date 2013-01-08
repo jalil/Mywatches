@@ -1,26 +1,33 @@
 class PostsController < ApplicationController
-  def index
-
-	@posts = Post.all
-  end
-
-  def show
-	    @post = Post.find(params[:id]) 
-      @comment = @post.comments.new
+	def index
+		@posts = Post.all		
 	end
 
-  def new
-	  @post = Post.new
-  end
-  
-  def create
-	@post = Post.create(params[:post])
-  	
-  	
-  end
+	def new
+		 @post = Post.new
 
+		 
+	end
 
-	@posts =  Post.all
-  end
+	def about
+		
+	end
+
+	
+	def show
+		@post = Post.find(params[:id])
+		@comment = Comment.new
+		
+	end
+
+	def create
+		 @post =Post.create(params[:post])
+		 	if @post.valid?
+				redirect_to root_path
+			else
+				redirect_to new_post_path
+			end
+
+	end
 
 end

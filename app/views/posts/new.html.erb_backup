@@ -1,8 +1,0 @@
-
-<h2> Please submit a link here:</h2>
-<%=form_for(@post) do |p| %>
-
-        Url<%=p.text_field  :url %> <br>
-        Title<%=p.text_field :title %><br>
-		<%=p.submit "save!" %>
-<% end %>

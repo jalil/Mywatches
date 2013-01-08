@@ -1,8 +1,10 @@
 
-<h2> Please submit a link here:</h2>
-<%=form_for(@post) do |p| %>
 
-        Url<%=p.text_field  :url %> <br>
-        Title<%=p.text_field :title %><br>
-		<%=p.submit "save!" %>
+<%= form_tag posts_path do %>
+	<%= label_tag :title, "Title" %>
+	<%= text_field_tag "post[title]" %>
+	<%= label_tag :url, "URL" %>
+	<%= text_field_tag "post[url]" %>
+	<br/>
+	<%= submit_tag "Submit a Link" %>
 <% end %>
